@@ -1,0 +1,31 @@
+Arguments: 
+  C:\Users\jeff\AppData\Local\Volta\tools\image\node\16.14.2\node.exe C:\Users\jeff\AppData\Local\Volta\tools\image\yarn\1.22.18\bin\yarn.js set version 3.x
+
+PATH: 
+  C:\Users\jeff\AppData\Local\Volta\tools\image\yarn\1.22.18\bin;C:\Users\jeff\AppData\Local\Volta\tools\image\node\16.14.2;C:\Users\jeff\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\jeff\bin;C:\Program Files\Volta;C:\Program Files\Python310\Scripts;C:\Program Files\Python310;C:\Python39\Scripts;C:\Python39;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\ProgramData\chocolatey\bin;C:\Users\jeff\AppData\Local\Volta\bin;C:\Users\jeff\AppData\Local\Microsoft\WindowsApps;C:\Users\jeff\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jeff\AppData\Roaming\npm;C:\Users\jeff\Applications\texlive\2021\bin\win32;C:\Users\jeff\AppData\Local\Yarn\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.18
+
+Node version: 
+  16.14.2
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: Release not found: 3.x
+      at C:\Users\jeff\AppData\Local\Volta\tools\image\yarn\1.22.18\lib\cli.js:86351:17
+      at Generator.next (<anonymous>)
+      at step (C:\Users\jeff\AppData\Local\Volta\tools\image\yarn\1.22.18\lib\cli.js:310:30)
+      at C:\Users\jeff\AppData\Local\Volta\tools\image\yarn\1.22.18\lib\cli.js:321:13
+      at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
