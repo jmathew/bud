@@ -1,10 +1,14 @@
 {
   "name": "bud",
   "packageManager": "yarn@3.2.0",
-  "files": ["dist"],
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "typescript": "^4.6.3"
-  }, 
+  },
   "scripts": {
     "build": "tsc"
   }
