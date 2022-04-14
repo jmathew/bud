@@ -1,8 +1,8 @@
 {
   "name": "bud",
   "packageManager": "yarn@3.2.0",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
