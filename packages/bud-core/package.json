@@ -6,10 +6,10 @@
   "files": [
     "dist"
   ],
-  "peerDependencies": {
-    "typescript": "*"
-  },
   "scripts": {
     "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.3"
   }
 }

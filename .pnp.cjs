@@ -33,8 +33,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
       ["bud", ["workspace:."]],\
-      ["bud-core", ["virtual:59ef8de3f1614aa4e5d9c42ed84c857b7127752d8f8fc60abbc8eea3e3f972f751b87aa58f3df3abb149eda490b85350abfc870f40600c26152b4cb3b6346a8d#workspace:packages/bud-core", "workspace:packages/bud-core"]],\
-      ["bud-electron", ["virtual:59ef8de3f1614aa4e5d9c42ed84c857b7127752d8f8fc60abbc8eea3e3f972f751b87aa58f3df3abb149eda490b85350abfc870f40600c26152b4cb3b6346a8d#workspace:packages/bud-electron", "workspace:packages/bud-electron"]]\
+      ["bud-core", ["workspace:packages/bud-core"]],\
+      ["bud-electron", ["workspace:packages/bud-electron"]]\
     ],\
     "fallbackPool": [\
     ],\
@@ -43,8 +43,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
-            ["bud-core", "virtual:59ef8de3f1614aa4e5d9c42ed84c857b7127752d8f8fc60abbc8eea3e3f972f751b87aa58f3df3abb149eda490b85350abfc870f40600c26152b4cb3b6346a8d#workspace:packages/bud-core"],\
-            ["bud-electron", "virtual:59ef8de3f1614aa4e5d9c42ed84c857b7127752d8f8fc60abbc8eea3e3f972f751b87aa58f3df3abb149eda490b85350abfc870f40600c26152b4cb3b6346a8d#workspace:packages/bud-electron"],\
+            ["bud-core", "workspace:packages/bud-core"],\
+            ["bud-electron", "workspace:packages/bud-electron"],\
             ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=bda367"]\
           ],\
           "linkType": "SOFT"\
@@ -55,53 +55,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["bud", "workspace:."],\
-            ["bud-core", "virtual:59ef8de3f1614aa4e5d9c42ed84c857b7127752d8f8fc60abbc8eea3e3f972f751b87aa58f3df3abb149eda490b85350abfc870f40600c26152b4cb3b6346a8d#workspace:packages/bud-core"],\
-            ["bud-electron", "virtual:59ef8de3f1614aa4e5d9c42ed84c857b7127752d8f8fc60abbc8eea3e3f972f751b87aa58f3df3abb149eda490b85350abfc870f40600c26152b4cb3b6346a8d#workspace:packages/bud-electron"],\
+            ["bud-core", "workspace:packages/bud-core"],\
+            ["bud-electron", "workspace:packages/bud-electron"],\
             ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=bda367"]\
           ],\
           "linkType": "SOFT"\
         }]\
       ]],\
       ["bud-core", [\
-        ["virtual:59ef8de3f1614aa4e5d9c42ed84c857b7127752d8f8fc60abbc8eea3e3f972f751b87aa58f3df3abb149eda490b85350abfc870f40600c26152b4cb3b6346a8d#workspace:packages/bud-core", {\
-          "packageLocation": "./.yarn/__virtual__/bud-core-virtual-d9dcc90097/1/packages/bud-core/",\
-          "packageDependencies": [\
-            ["bud-core", "virtual:59ef8de3f1614aa4e5d9c42ed84c857b7127752d8f8fc60abbc8eea3e3f972f751b87aa58f3df3abb149eda490b85350abfc870f40600c26152b4cb3b6346a8d#workspace:packages/bud-core"],\
-            ["@types/typescript", null],\
-            ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=bda367"]\
-          ],\
-          "packagePeers": [\
-            "@types/typescript",\
-            "typescript"\
-          ],\
-          "linkType": "SOFT"\
-        }],\
         ["workspace:packages/bud-core", {\
           "packageLocation": "./packages/bud-core/",\
           "packageDependencies": [\
-            ["bud-core", "workspace:packages/bud-core"]\
+            ["bud-core", "workspace:packages/bud-core"],\
+            ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=bda367"]\
           ],\
           "linkType": "SOFT"\
         }]\
       ]],\
       ["bud-electron", [\
-        ["virtual:59ef8de3f1614aa4e5d9c42ed84c857b7127752d8f8fc60abbc8eea3e3f972f751b87aa58f3df3abb149eda490b85350abfc870f40600c26152b4cb3b6346a8d#workspace:packages/bud-electron", {\
-          "packageLocation": "./.yarn/__virtual__/bud-electron-virtual-53a49c4113/1/packages/bud-electron/",\
-          "packageDependencies": [\
-            ["bud-electron", "virtual:59ef8de3f1614aa4e5d9c42ed84c857b7127752d8f8fc60abbc8eea3e3f972f751b87aa58f3df3abb149eda490b85350abfc870f40600c26152b4cb3b6346a8d#workspace:packages/bud-electron"],\
-            ["@types/typescript", null],\
-            ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=bda367"]\
-          ],\
-          "packagePeers": [\
-            "@types/typescript",\
-            "typescript"\
-          ],\
-          "linkType": "SOFT"\
-        }],\
         ["workspace:packages/bud-electron", {\
           "packageLocation": "./packages/bud-electron/",\
           "packageDependencies": [\
-            ["bud-electron", "workspace:packages/bud-electron"]\
+            ["bud-electron", "workspace:packages/bud-electron"],\
+            ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=bda367"]\
           ],\
           "linkType": "SOFT"\
         }]\

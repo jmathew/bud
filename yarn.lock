@@ -8,16 +8,16 @@ __metadata:
 "bud-core@workspace:*, bud-core@workspace:packages/bud-core":
   version: 0.0.0-use.local
   resolution: "bud-core@workspace:packages/bud-core"
-  peerDependencies:
-    typescript: "*"
+  dependencies:
+    typescript: ^4.6.3
   languageName: unknown
   linkType: soft
 
 "bud-electron@workspace:*, bud-electron@workspace:packages/bud-electron":
   version: 0.0.0-use.local
   resolution: "bud-electron@workspace:packages/bud-electron"
-  peerDependencies:
-    typescript: "*"
+  dependencies:
+    typescript: ^4.6.3
   languageName: unknown
   linkType: soft
 
