@@ -1,0 +1,1 @@
+export const holaCore = () => { console.log('hi from the core'); }
