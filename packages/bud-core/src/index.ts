@@ -1,1 +1,1 @@
-export const holaCore = () => { console.log('hi from the core'); }
+export const holaCore = () => { console.log('hi from the core. version 2.'); }
