@@ -36,6 +36,8 @@ rm -r .yarn/
 
 # Add the updated files.
 git add dist/ package.json
+git status
+git diff --cached
 
 # Commit and push.
 git commit -m "Update $package"
