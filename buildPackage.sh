@@ -22,7 +22,7 @@ cp -rv ./dist package.json "../../$tmpDir"
 
 cd -
 
-git checkout "$package"
+git switch -c "$package"
 
 # Clear old files
 rm -r dist/

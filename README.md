@@ -9,6 +9,15 @@ yarn tsc --init
 yarn dlx @yarnpkg/sdks vscode
 ```
 
+
+# Doing a release
+```sh
+bash buildPackage.sh packagename
+
+bash buildPackage.sh bud-core
+bash buildPackage.sh bud-electron
+```
+
 # Installation in target
 ```sh
 # Remove first if installed already.
