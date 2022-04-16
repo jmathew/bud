@@ -17,24 +17,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     ],\
     "dependencyTreeRoots": [\
       {\
-        "name": "bud",\
+        "name": "@bud/bud",\
         "reference": "workspace:."\
       },\
       {\
-        "name": "bud-core",\
+        "name": "@bud/bud-core",\
         "reference": "workspace:packages/bud-core"\
       },\
       {\
-        "name": "bud-electron",\
+        "name": "@bud/bud-electron",\
         "reference": "workspace:packages/bud-electron"\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
-      ["bud", ["workspace:."]],\
-      ["bud-core", ["workspace:packages/bud-core"]],\
-      ["bud-electron", ["workspace:packages/bud-electron"]]\
+      ["@bud/bud", ["workspace:."]],\
+      ["@bud/bud-core", ["workspace:packages/bud-core"]],\
+      ["@bud/bud-electron", ["workspace:packages/bud-electron"]]\
     ],\
     "fallbackPool": [\
     ],\
@@ -43,40 +43,41 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
-            ["bud-core", "workspace:packages/bud-core"],\
-            ["bud-electron", "workspace:packages/bud-electron"],\
+            ["@bud/bud-core", "workspace:packages/bud-core"],\
+            ["@bud/bud-electron", "workspace:packages/bud-electron"],\
             ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=bda367"]\
           ],\
           "linkType": "SOFT"\
         }]\
       ]],\
-      ["bud", [\
+      ["@bud/bud", [\
         ["workspace:.", {\
           "packageLocation": "./",\
           "packageDependencies": [\
-            ["bud", "workspace:."],\
-            ["bud-core", "workspace:packages/bud-core"],\
-            ["bud-electron", "workspace:packages/bud-electron"],\
+            ["@bud/bud", "workspace:."],\
+            ["@bud/bud-core", "workspace:packages/bud-core"],\
+            ["@bud/bud-electron", "workspace:packages/bud-electron"],\
             ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=bda367"]\
           ],\
           "linkType": "SOFT"\
         }]\
       ]],\
-      ["bud-core", [\
+      ["@bud/bud-core", [\
         ["workspace:packages/bud-core", {\
           "packageLocation": "./packages/bud-core/",\
           "packageDependencies": [\
-            ["bud-core", "workspace:packages/bud-core"],\
+            ["@bud/bud-core", "workspace:packages/bud-core"],\
             ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=bda367"]\
           ],\
           "linkType": "SOFT"\
         }]\
       ]],\
-      ["bud-electron", [\
+      ["@bud/bud-electron", [\
         ["workspace:packages/bud-electron", {\
           "packageLocation": "./packages/bud-electron/",\
           "packageDependencies": [\
-            ["bud-electron", "workspace:packages/bud-electron"],\
+            ["@bud/bud-electron", "workspace:packages/bud-electron"],\
+            ["@bud/bud-core", "workspace:packages/bud-core"],\
             ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=bda367"]\
           ],\
           "linkType": "SOFT"\

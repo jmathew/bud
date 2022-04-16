@@ -1,1 +1,7 @@
-export const holaElectron = () => { console.log('hi from electron'); }
+import { holaCore } from '@bud/bud-core';
+
+export const holaElectron = () => { 
+  holaCore(); 
+  console.log('hi from electron'); 
+}
+

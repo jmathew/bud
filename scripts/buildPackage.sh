@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# DEFUCNT
+
 set -e
 
 : ${1?' You forgot to supply a package directory'}

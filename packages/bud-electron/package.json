@@ -1,5 +1,6 @@
 {
-  "name": "bud-electron",
+  "name": "@bud/bud-electron",
+  "version": "1.0.0",
   "private": true,
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -7,9 +8,13 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "build-arc": "yarn build && yarn pack -o ./%s-%v.tar.gz"
   },
   "devDependencies": {
     "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "@bud/bud-core": "workspace:*"
   }
 }

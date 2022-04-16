@@ -1,13 +1,18 @@
 {
-  "name": "bud",
+  "name": "@bud/bud",
   "packageManager": "yarn@3.2.0",
   "workspaces": [
     "packages/*"
   ],
   "private": true,
+  "dependencies": {
+    "@bud/bud-core": "workspace:*",
+    "@bud/bud-electron": "workspace:*"
+  },
   "devDependencies": {
-    "bud-core": "workspace:*",
-    "bud-electron": "workspace:*",
     "typescript": "^4.6.3"
+  },
+  "scripts": {
+    "build": "tsc -b tsconfig.json"
   }
 }

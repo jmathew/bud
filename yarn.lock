@@ -5,28 +5,29 @@ __metadata:
   version: 6
   cacheKey: 8
 
-"bud-core@workspace:*, bud-core@workspace:packages/bud-core":
+"@bud/bud-core@workspace:*, @bud/bud-core@workspace:packages/bud-core":
   version: 0.0.0-use.local
-  resolution: "bud-core@workspace:packages/bud-core"
+  resolution: "@bud/bud-core@workspace:packages/bud-core"
   dependencies:
     typescript: ^4.6.3
   languageName: unknown
   linkType: soft
 
-"bud-electron@workspace:*, bud-electron@workspace:packages/bud-electron":
+"@bud/bud-electron@workspace:*, @bud/bud-electron@workspace:packages/bud-electron":
   version: 0.0.0-use.local
-  resolution: "bud-electron@workspace:packages/bud-electron"
+  resolution: "@bud/bud-electron@workspace:packages/bud-electron"
   dependencies:
+    "@bud/bud-core": "workspace:*"
     typescript: ^4.6.3
   languageName: unknown
   linkType: soft
 
-"bud@workspace:.":
+"@bud/bud@workspace:.":
   version: 0.0.0-use.local
-  resolution: "bud@workspace:."
+  resolution: "@bud/bud@workspace:."
   dependencies:
-    bud-core: "workspace:*"
-    bud-electron: "workspace:*"
+    "@bud/bud-core": "workspace:*"
+    "@bud/bud-electron": "workspace:*"
     typescript: ^4.6.3
   languageName: unknown
   linkType: soft
